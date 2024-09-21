@@ -78,7 +78,7 @@ export default function App() {
         keyExtractor={(item) => item.id}
       />
       <TouchableOpacity onPress={removeDoneTasks} style={styles.removeButton}>
-        <Text style={styles.buttonText}>Poista tehdyt tehtävät</Text>
+        <Text style={styles.buttonText}>Remove done tasks</Text>
       </TouchableOpacity>
     </View>
   );
@@ -94,26 +94,26 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 10,
-    textAlign: 'center',  // Keskitetään teksti
+    textAlign: 'center',  
   },
   inputContainer: {
-    flexDirection: 'row', // Asetetaan sisäkkäiset komponentit riviksi
-    alignItems: 'center', // Keskitetään pystysuunnassa
+    flexDirection: 'row', 
+    alignItems: 'center', 
   },
   input: {
     padding: 10,
-    marginRight: 10, // Lisää väli nappiin
-    flex: 1, // Tekstikenttä vie kaiken tilan
+    marginRight: 10, 
+    flex: 1, 
   },
   button: {
     padding: 10,
-    backgroundColor: 'transparent', // Tausta ei ole
+    backgroundColor: 'transparent', 
   },
   buttonText: {
-    color: 'blue', // Tekstin väri sininen
-    textAlign: 'center', // Keskitetään nappiteksti
+    color: 'blue',
+    textAlign: 'center', 
   },
   removeButton: {
-    marginTop: 10, // Lisää yläreunaan tilaa
+    marginTop: 10, 
   },
 });
